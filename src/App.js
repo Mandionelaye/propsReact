@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import Profile from "./profill/profile";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
+
 
 function App() {
+function handleName(name){return alert(name);};
+let fullName="Seydina Mandione mbaye";
+let bio="Developpeur Full Stack et aussi etudiant en informatique de developpement d'application web mobile a l'Universite Virtuelle du Senegal et a Gomycode. J'ai 24ans et je suis en 2e annee de licence.";
+let profession="Developpeur Full Stack";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="body">
+    <div className="container">
+    <Profile fullName={fullName} bio={bio} profession={profession} handleName={handleName}/> 
     </div>
+    </div>
+   </>
   );
 }
 
 export default App;
+
+
