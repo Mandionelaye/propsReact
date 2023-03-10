@@ -3,7 +3,7 @@ import Profile from "./profill/profile";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-
+import image1 from "./profile.JPG";
 
 
 function App() {
@@ -16,7 +16,9 @@ let profession="Developpeur Full Stack";
     <>
     <div className="body">
     <div className="container">
-    <Profile fullName={fullName} bio={bio} profession={profession} handleName={handleName}/> 
+    <Profile fullName={fullName} bio={bio} profession={profession} handleName={handleName}>
+        {image1}
+      </Profile> 
     </div>
     </div>
    </>

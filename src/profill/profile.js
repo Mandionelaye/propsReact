@@ -1,8 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types'; 
-import image1 from "./profile.JPG";
 import image2 from "./photo.jpeg";
-function Profile({fullName ='Le nom de Profile', bio = 'biografie', profession="profession",handleName}) {
+function Profile({fullName ='Le nom de Profile', bio = 'biografie', profession="profession",handleName, children}) {
   handleName(fullName);
   const stylename = {color:"rgb(120, 48, 183)",fontWeight: "bolder",fontSize: "30px",};
 const styleprfs={ color:'rgb(218, 255, 11)',fontWeight:'bolder'};
@@ -15,7 +14,7 @@ const img1 = { width: "18vmin", borderRadius: "10px"};
     <>
    <div className="row">
       <div className="col col-md-12" style={block1}>
-        <img src={image1} style={img1} alt="img" />
+        <img src={children} style={img1} alt="img" />
       <div style={divestyle}>   
       <h1 style={stylename}>{fullName}</h1>
       <h3 style={styleprfs}>{profession}</h3>
