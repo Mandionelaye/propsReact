@@ -29,6 +29,7 @@ const img1 = { width: "18vmin", borderRadius: "10px"};
   );
  };
 Profile.propTypes={
+    children:propTypes.string,
     fullName:propTypes.string,
     bio:propTypes.string,
     profession:propTypes.string,
